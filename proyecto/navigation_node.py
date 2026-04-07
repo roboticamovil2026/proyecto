@@ -75,7 +75,7 @@ class NavigationNode(Node):
         mapa_direcciones = {
             'frente': 0.0,
             'izquierda': 90.0,
-            'derecha': -90.0,
+            'derecha': 270.0,
             'atras': 180.0
         }
         
@@ -132,7 +132,7 @@ class NavigationNode(Node):
                 cono_despejado = self.leer_distancias_en_rango(90-cono_vision, 90+cono_vision)
             else:
                 # Movimiento hacia la DERECHA
-                cono_despejado = self.leer_distancias_en_rango(-90-cono_vision, -90+cono_vision)
+                cono_despejado = self.leer_distancias_en_rango(270-cono_vision, 270+cono_vision)
 
         # 3. Calcular movimiento basado en tiempo
         cmd, estado = calcular_movimiento_relativo(

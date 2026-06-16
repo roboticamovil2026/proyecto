@@ -29,6 +29,7 @@ class OdomOffsetNode(Node):
         self.option = self.get_parameter('option').value
 
         self.offset_configs = {
+            #
             0: {
                 'q0_x': 0.0,
                 'q0_y': 0.0,
@@ -36,6 +37,7 @@ class OdomOffsetNode(Node):
                 'passthrough': True,
                 'position_rotation': 0.0,
             },
+            # Escena 3
             3: {
                 'q0_x': 0.75,
                 'q0_y': 0.75,
@@ -43,6 +45,7 @@ class OdomOffsetNode(Node):
                 'passthrough': False,
                 'position_rotation': 0.0,
             },
+            # 5 Este
             5: {
                 'q0_x': 3.25,
                 'q0_y': 0.75,
@@ -50,6 +53,15 @@ class OdomOffsetNode(Node):
                 'passthrough': False,
                 'position_rotation': math.pi / 2.0,
             },
+            # Escena 7
+            7: {
+                'q0_x': 0.25,
+                'q0_y': 4.25,
+                'q0_yaw': math.pi / 2.0,
+                'passthrough': False,
+                'position_rotation': 0.0,
+            },
+            # 3 Norte
             8: {
                 'q0_x': 0.75,
                 'q0_y': 0.75,
